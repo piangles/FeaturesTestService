@@ -26,6 +26,7 @@ public class FeaturesTestServiceClient extends Thread implements SessionAwareabl
 			
 			stream.processAsync((payload) -> {
 				System.out.println("New message on stream : " + payload);
+				return payload;
 			});
 		}
 		catch (Exception e)
