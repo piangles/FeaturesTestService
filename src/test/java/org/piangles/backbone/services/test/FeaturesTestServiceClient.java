@@ -24,7 +24,7 @@ public class FeaturesTestServiceClient extends Thread implements SessionAwareabl
 			
 			System.out.println("Metadata :: " + stream.getMetadata());
 			
-			stream.process((payload) -> {
+			stream.processAsync((payload) -> {
 				System.out.println("New message on stream : " + payload);
 			});
 		}
