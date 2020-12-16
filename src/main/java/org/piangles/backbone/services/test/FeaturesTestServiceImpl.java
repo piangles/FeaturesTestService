@@ -1,7 +1,7 @@
 package org.piangles.backbone.services.test;
 
 import org.piangles.core.services.remoting.ExecutionContext;
-import org.piangles.core.stream.EndOfStream;
+import org.piangles.core.stream.StartOfStream;
 import org.piangles.core.stream.Stream;
 
 public class FeaturesTestServiceImpl implements FeaturesTestService 
@@ -28,6 +28,6 @@ public class FeaturesTestServiceImpl implements FeaturesTestService
 				}
 			}
 		}
-		return new EndOfStream<>();
+		return new StartOfStream<>();
 	}
 }
